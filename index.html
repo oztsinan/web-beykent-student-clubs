@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kulüp Sayfası</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="./js/gallery/css/SimpleSlider.css" rel="stylesheet" type="text/css"> 
+        <link rel="icon" type="image/png" href="./img/beykentLogo.png" />
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <div id="galleryPopup">
+            <div id="galleryPopup-frame">
+                <div id="galleryPopup-frame-top-header">
+                    <img :src="image" alt="">
+                    <p>{{username}}</p>
+                </div>
+                <div id="galleryPopup-frame-photo-video">
+                    <img src="./js/gallery/Images/1.png" alt="">
+                </div>
+                <div id="galleryPopup-frame-right-container">
+                    <div id="top-header">
+                        <img :src="image" alt="">
+                        <p>{{username}}</p>
+                    </div>
+                    <div id="post-description">
+                        <p2>{{description}}</p2>
+                    </div>
+                    <div id="post-emoji">
+                        <div id="emoji-list"><img src="./img/emoji/emoji_heart_eyes.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_100.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_glasses.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_hands.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_like.png" alt=""></div>
+                        <div id="emoji-list">  <img src="./img/emoji/emoji_smile.png" alt=""></div>
+                        
+           
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="galleryPopup-2">
+            <div id="galleryPopup-frame-2">
+                <div id="galleryPopup-frame-top-header">
+                    <img :src="image" alt="">
+                    <p>{{username}}</p>
+                </div>
+                <div id="galleryPopup-frame-photo-video">
+                    <img src="./js/gallery/Images/3.png" alt="">
+                </div>
+                <div id="galleryPopup-frame-right-container">
+                    <div id="top-header">
+                        <img :src="image" alt="">
+                        <p>{{username}}</p>
+                    </div>
+                    <div id="post-description">
+                        <p2>{{description}}</p2>
+                    </div>
+                    <div id="post-emoji">
+                        <div id="emoji-list"><img src="./img/emoji/emoji_heart_eyes.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_100.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_glasses.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_hands.png" alt=""></div>
+                        <div id="emoji-list"><img src="./img/emoji/emoji_like.png" alt=""></div>
+                        <div id="emoji-list">  <img src="./img/emoji/emoji_smile.png" alt=""></div>
+                        
+           
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="container">
+
+    
+            <div id="left-content">
+                <div id="left-content-menu">
+                    
+                    <div id="left-content-menu-main">
+                        <div id="menu-logo">
+                            <img src="./img/beykentLogo.png" width="40px" alt="">
+
+                        </div>
+
+                        <div id="menu-icon">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </div>
+    
+                        <div id="menu-item">
+                            <a href="#main-content-post"><ion-icon name="storefront-outline"></ion-icon></a>
+                        </div>
+    
+                        <div id="menu-item">
+                            <a href="#main-content-post-box-announcement"><ion-icon name="notifications-outline" onclick="liveAnnouncementClick()"></ion-icon></a>
+                        </div>
+    
+                        <div id="menu-item">
+                            <a href="#main-content-post-box-events"><ion-icon name="calendar-outline" onclick="liveCalendarClick()" ></ion-icon></a>
+                        </div>
+
+                        <div id="menu-item">
+                            <a href="#main-content-post-box-poll"><ion-icon name="stats-chart-outline" onclick="livePollClick()"></ion-icon></a>
+                        </div>
+
+                        <div id="menu-item-zoom">
+                            <a href="#main-content-post-box-zoom"><ion-icon name="videocam-outline" onclick="liveZoomClick()"></ion-icon></a>
+                        </div>
+    
+    
+                        <div id="menu-item">
+                            <a href="#main-content-post-box-video"><ion-icon name="play-circle-outline" onclick="liveVideoClick()"></ion-icon></a>
+                        </div>
+    
+    
+                        <div id="menu-item">
+                            <a href="#main-content-post-box-live-broadcast"><ion-icon name="radio-outline" onclick="liveBroadcastClick()"></ion-icon></a>
+                        </div>
+
+
+                    </div>
+
+                    
+
+
+                    <div id="menu-item-logout-profile">
+                        <div id="menu-item">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                        </div>
+
+                        <div id="menu-item">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </div>
+                        
+                        <div id="menu-item">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+    
+            <div id="main-content">
+                <div class="moon"></div>
+                <div class="sun"></div>
+
+                <div id="mobile-menu-content">
+                    <div id="mobile-menu-content-list">
+                        <list><a href="#top"><ion-icon name="storefront-outline"></ion-icon></a></list>
+                        <list><a href="#story-container"><ion-icon name="notifications-outline" onclick="liveAnnouncementClick()"></ion-icon></a></list>
+                        <list><a href="#video-content"><ion-icon name="calendar-outline" onclick="liveCalendarClick()" ></ion-icon></a></list>
+                        <list><a href="#main-content-post-events-box-list2"><ion-icon name="stats-chart-outline" onclick="livePollClick()"></ion-icon></a></list>
+                        <list-zoom><a href="#main-content-post-box-announcement"><ion-icon name="videocam-outline" onclick="liveZoomClick()"></ion-icon></a></list-zoom>
+                        <list><a href="#main-content-post-box-zoom"><ion-icon name="play-circle-outline" onclick="liveVideoClick()"></ion-icon></a></list>
+                        <list><a href="#main-content-post-box-poll"><ion-icon name="radio-outline" onclick="liveBroadcastClick()"></ion-icon></a></list>
+
+                    </div>
+                </div>
+
+                <div id="main-content-header">
+                    <div id="main-content-header-first">
+                        <div id="main-content-header-first-top">
+                            <img src="./img/hand.png" width="30px" height="30px">
+                            <h3 id="welcomeMessage">Hey Sinan , Good Morning</h3>
+                        </div>
+                        
+                        <p>Stay up to date with your team</p>
+                    </div>
+                    <div id="main-content-header-right">
+                        <div id="main-content-header-search">
+                            <div id="search-icon" style="position: absolute;">
+                                <ion-icon name="search-outline" style="font-size: 25px; justify-content: center; align-items: center;"></ion-icon>
+                            </div>
+                            <div id="search">
+                                <input type="text" placeholder="Search" maxlength="20" >
+                            </div>
+                            
+                        </div>
+                        <div id="setting-icon">
+                            <ion-icon name="settings-outline" style="cursor: pointer;"></ion-icon>
+                        </div>
+                        
+                        <div id="main-content-header-top-pp">
+                            <div id="logged" style="position: absolute;">
+                                <img src="./img/login.png" alt="">
+                            </div>
+                            <div id="main-content-header-top-pp2">
+                                <img src="./img/face/pp.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                                      
+                </div>
+
+                <div id="story-kutu" class="story-container">
+                    <div class="horizontal-scroll">
+                      <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i  class="fas fa-chevron-left"></i></button>
+                      <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i  class="fas fa-chevron-right"></i></button>
+                      <div class="storys-container">
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/1.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Utku G.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/2.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ülkü N.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/3.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Buğra A.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/4.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Müge U.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/5.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Dilay K.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/6.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Guney Ö.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/7.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ezgi U.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/8.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ahmet C.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/9.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Burhan K.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/10.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Uğur K.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/11.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Berna D.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/12.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Aysun I.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/13.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Caria Y.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/14.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Soner K.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/15.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ceren C.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/16.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Gaye G.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/17.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ilker C.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/18.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Metin K.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/19.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Doga S.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/20.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ela B.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/21.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Azra Z.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/22.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Öykü Ç.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/23.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Miray H.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/24.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Gülben Ç.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/25.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ceyda P.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/26.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Aytaç G.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/27.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Özlem D.</p></div>
+                        </div>
+                        <div class="story-user">
+                            <div class="story-pp">
+                                <div class="story-circle"><img src="./img/face/28.jfif "></div>
+                            </div>
+                            <div class="story-text"><p>Ender T.</p></div>
+                        </div>
+
+
+                        
+                
+                      </div>
+                    </div>
+                  </div>
+
+                <div id="main-content-post">
+                    <div id="main-content-post-p">
+                        <div id="main-content-post-box-announcement">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp">
+                                    <img src="./img/post-pp/announcement_icon.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Announcement</div>
+                                    <div id="main-content-post-header-r-date">16:55</div>
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis neque sed urna vehicula vehicula. Aliquam condimentum vitae nulla a posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </icerik>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="main-content-post-box-zoom">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-zoom">
+                                    <img src="./img/post-pp/zoom.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Zoom</div>
+                                    <div id="main-content-post-header-r-date">15:20</div>
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik>You have an upcoming zoom call for  at <b style="font-weight: bold;">"Developer"</b> 19:00 </icerik>
+                                </div>
+                            </div>
+                            <div id="main-content-post-footer-zoom">
+                                <meeting-id><b style="font-weight: bold; margin-right: 5px;">Meeting </b> ID : 987-986-908</meeting-id>
+                            </div>
+                            <div id="main-content-post-footer-zoom-f">
+                                <button>Join</button>
+                                <div id="main-content-post-footer-zoom-users">
+                                    <img src="./img/face/7.jfif" alt="">
+                                    <img src="./img/face/5.jfif" style="margin-left: -22px;" alt="">
+                                    <img src="./img/face/1.jfif" style="margin-left: -44px;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="main-content-post-box-video">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-video">
+                                    <img src="./img/video.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Video</div>
+                                    <div id="main-content-post-header-r-date">latest videos</div>
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis neque sed urna vehicula vehicula. Aliquam condimentum vitae nulla a posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </icerik>
+                                </div>
+                            </div>
+                            
+                            <div id="video-content" >
+                                <video id="player" style="width: 100%; height: a;" playsinline controls poster="./video/tanitimCover.png">
+                                    <source src="./video/tanitim.mp4" autoplay type="video/mp4" />
+                                  
+
+                                  </video>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="main-content-post-m">
+                        <div id="main-content-post-box-events">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-events">
+                                    <img src="./img/events.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Events</div>
+                                    <div id="main-content-post-header-r-date">this month</div>
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik>You have an upcoming zoom call for  at <b style="font-weight: bold;">"Developer"</b> 19:00 </icerik>
+                                </div>
+                            </div>
+
+                            <div id="main-content-post-events-box">
+
+                                <div id="main-content-post-events-box-list">
+
+                                    <div id="rows">
+                                        <div id="main-content-post-events-box-list-date-box">
+                                            <date>05</date>
+                                            <month>12</month>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-text-box">
+                                            <event-text>Event Name</event-text>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-icon">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+
+                                    </div>
+                                   
+                                    <div id="main-content-post-events-box-list-text-box-aciklama">
+                                        <div id="main-content-post-events-box-list-text-box-aciklama-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam suscipit elementum. Aliquam sed arcu feugiat metus bibendum rhoncus non.</p>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div id="main-content-post-events-box-list">
+
+                                    <div id="rows">
+                                        <div id="main-content-post-events-box-list-date-box">
+                                            <date>30</date>
+                                            <month>11</month>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-text-box">
+                                            <event-text>Event Name</event-text>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-icon">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+
+                                    </div>
+                                   
+                                    <div id="main-content-post-events-box-list-text-box-aciklama">
+                                        <div id="main-content-post-events-box-list-text-box-aciklama-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam suscipit elementum. Aliquam sed arcu feugiat metus bibendum rhoncus non.</p>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div id="main-content-post-events-box-list2">
+
+                                    <div id="rows">
+                                        <div id="main-content-post-events-box-list-date-box">
+                                            <date>25</date>
+                                            <month>11</month>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-text-box">
+                                            <event-text>Event Name</event-text>
+                                        </div>
+                                        <div id="main-content-post-events-box-list-icon">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+
+                                    </div>
+                                   
+                                    <div id="main-content-post-events-box-list-text-box-aciklama">
+                                        <div id="main-content-post-events-box-list-text-box-aciklama-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam suscipit elementum. Aliquam sed arcu feugiat metus bibendum rhoncus non.</p>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+
+
+                                
+                            </div>
+
+                            
+
+
+                        </div>
+
+                        <div id="main-content-post-box-photo-gallery">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-photo-gallery">
+                                    <img src="./img/post-pp/photo-gallery.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Photos</div>
+                                    <div id="main-content-post-header-r-date">latest photos</div>
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik></icerik>
+                                </div>
+                            </div>
+                            
+                            <div id="photo-gallery">
+
+
+                           
+                                <img src="./js/gallery/Images/1.png" onclick="photoClickf()" alt="">
+                                <img src="./js/gallery/Images/3.png" onclick="photoClickf2()" alt="">
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="main-content-post-r">
+                        <div id="main-content-post-box-poll">
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-poll">
+                                    <img src="./img/pool/poll.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Poll</div>
+
+                                </div>
+                            </div>
+                            <div id="main-content-post-middle-ust">
+                                <div id="main-content-post-middle">
+                                    <icerik>What <span>activities</span> should we do? </icerik>
+                                </div>
+                            </div>
+
+                            <div id="main-content-post-box-poll-p">
+                                <div id="main-content-post-box-poll-p-anket">
+                                    <div id="main-content-post-box-poll-p-anket-img"><img src="./img/pool/python.png" alt=""></div>
+                                    <div id="main-content-post-box-poll-p-anket-bar">
+                                        <div id="main-content-post-box-poll-p-anket-bar-text">
+                                            <p>Python</p>
+                                        </div>
+                                        <div id="main-content-post-box-poll-p-anket-bar-load" style="width: 50%;"></div>
+                                    
+                                    </div>
+                                    <div id="main-content-post-box-poll-p-anket-result"><p>%50</p></div>
+                                    
+
+                                </div>
+                                <div id="main-content-post-box-poll-p-anket">
+                                    <div id="main-content-post-box-poll-p-anket-img"><img src="./img/pool/swift.png" alt=""></div>
+                                    <div id="main-content-post-box-poll-p-anket-bar">
+                                        <div id="main-content-post-box-poll-p-anket-bar-text">
+                                            <p>Swift</p>
+                                        </div>
+                                        <div id="main-content-post-box-poll-p-anket-bar-load" style="width: 25%;"></div>
+                                    
+                                    </div>
+                                    <div id="main-content-post-box-poll-p-anket-result"><p>%25</p></div>
+                                    
+
+                                </div>
+                                <div id="main-content-post-box-poll-p-anket">
+                                    <div id="main-content-post-box-poll-p-anket-img"><img src="./img/pool/javascript.png" alt=""></div>
+                                    <div id="main-content-post-box-poll-p-anket-bar">
+                                        <div id="main-content-post-box-poll-p-anket-bar-text">
+                                            <p>Javascript</p>
+                                        </div>
+                                        <div id="main-content-post-box-poll-p-anket-bar-load" style="width: 15%;"></div>
+                                    
+                                    </div>
+                                    <div id="main-content-post-box-poll-p-anket-result"><p>%15</p></div>
+                                    
+
+                                </div>
+                                <div id="main-content-post-box-poll-p-anket">
+                                    <div id="main-content-post-box-poll-p-anket-img"><img src="./img/pool/c++.png" alt=""></div>
+                                    <div id="main-content-post-box-poll-p-anket-bar">
+                                        <div id="main-content-post-box-poll-p-anket-bar-text">
+                                            <p>C++</p>
+                                        </div>
+                                        <div id="main-content-post-box-poll-p-anket-bar-load" style="width: 10%;"></div>
+                                    
+                                    </div>
+                                    <div id="main-content-post-box-poll-p-anket-result"><p>%10</p></div>
+                                    
+
+                                </div>
+
+                               
+                            </div>
+                        </div>
+
+                        <div id="main-content-post-box-live-broadcast">
+
+                            <div id="main-content-post-header">
+                                <div id="main-content-post-header-pp-live-broadcast">
+                                    <img src="./img/live.png" alt="">
+                                </div>
+                                <div id="main-content-post-header-r">
+                                    <div id="main-content-post-header-r-username">Live Broadcast</div>
+                                    <div id="main-content-post-header-r-date">offline</div>
+                                </div>
+                            </div>
+                            <div id="broadcast-content">
+                                <div id="emoji-broadcast" >
+
+                                <img src="./img/tv.gif" alt="">
+                             
+                                </div>
+                                <div id="rectangle-broadcast">
+                                    <div id="text-broadcast">
+                                        <div style="text-align: center; margin-top: -10px;"><p style="font-family: monospace;">Broadcast Offline</p></div>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+
+                            <div id="video-content-live">
+                                
+
+                                <video id="player" style="width: 100%; height: auto;" playsinline controls poster="./video/cover.png">
+                                    <source src="./video/live-stream-offline-video.mp4" type="video/mp4" />
+                                  
+                                    <!-- Captions are optional -->
+                                    <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                                  </video>
+
+
+                            </div>
+
+                           
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+ 
+                <div id="top-menu">
+                    <div id="top-menu-space">
+                        <top-menu-item><a href="#main-content-post-box-announcement"><ion-icon name="videocam-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#main-content-post-box-photo-gallery"><ion-icon name="stats-chart-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#main-content-post-box-events"><ion-icon name="calendar-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#story-kutu"><ion-icon name="notifications-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#top"><ion-icon name="storefront-outline"></ion-icon></a></top-menu-item>
+                        
+
+                    </div>
+                    <div id="top-menu-logo"><img src="./img/beykentLogo.png" alt=""></div>
+                    <div id="top-menu-icon">
+                        <top-menu-item><a href="#main-content-post-box-video"><ion-icon name="play-circle-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#main-content-post-box-live-broadcast"><ion-icon name="radio-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#top"><ion-icon name="mail-unread-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#top"><ion-icon name="person-circle-outline"></ion-icon></a></top-menu-item>
+                        <top-menu-item><a href="#top"><ion-icon name="log-out-outline"></ion-icon></a></top-menu-item>
+                    </div>
+                </div>
+
+
+                <div id="mobile-menu">
+                    <div id="mobile-menu-space"></div>
+                    <div id="mobile-menu-logo"><img src="./img/beykentLogo.png" alt=""></div>
+                    <div id="mobile-menu-icon">
+                        <ion-icon id="mobileMenuClick" name="menu-outline" onclick="mobileMenuClick()" style="cursor: pointer;"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
