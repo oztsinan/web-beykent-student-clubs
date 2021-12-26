@@ -1,6 +1,6 @@
 ﻿
 
-## Üniversite Kulüp Responsive  Web Tasarım
+## Beykent Üniversitesi - Kulüp Panel Responsive Web Tasarımı
 
 **HTML**, **CSS** ve **Javascript** kullanarak yazmış olduğum siteyi inceleyebilirsiniz.  
 
