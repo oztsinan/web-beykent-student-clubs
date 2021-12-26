@@ -9,7 +9,7 @@
 ![enter image description here](https://imgyukle.com/f/2021/12/26/onpnhj.png)
 ## Anlık alınan saata göre güneş veya ayın çıkması 
 ![enter image description here](https://imgyukle.com/f/2021/12/26/onmVyP.gif)
-## Her ekrana uyumlu
+
 
 |![enter image description here](https://imgyukle.com/f/2021/12/26/onmnhq.gif)  |  ![enter image description here](https://imgyukle.com/f/2021/12/26/onmE4N.gif)
 |--|--|
