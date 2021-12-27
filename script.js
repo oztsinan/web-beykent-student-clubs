@@ -2,7 +2,6 @@ document.writeln("<script type='module' src='https://unpkg.com/ionicons@5.5.2/di
 document.writeln("<script type='nomodule' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>");
 
 
-
 var mq = window.matchMedia( "(max-width: 820px)" );
        
         let currentScroolPosition = 0;
@@ -304,11 +303,11 @@ var mq = window.matchMedia( "(max-width: 820px)" );
                 },
             })
  
-            const popUp2 = document.querySelector("#galleryPopup-2")
+            const popUp3 = document.querySelector("#galleryPopup-2")
             const content2 = document.querySelector("#galleryPopup-frame-2")
 
-            popUp2.addEventListener('click', function(){
-              popUp2.style.cssText = `
+            popUp3.addEventListener('click', function(){
+              popUp3.style.cssText = `
               display: none; 
               transition: 0.5s;
 
