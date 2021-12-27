@@ -186,7 +186,7 @@ var mq = window.matchMedia( "(max-width: 820px)" );
 
 
 
-            function formatAMPM(date) {
+                date = new Date()
                 var hours = date.getHours();
                 var minutes = date.getMinutes();
                 var ampm = hours >= 12 ? 'pm' : 'am';
@@ -194,16 +194,38 @@ var mq = window.matchMedia( "(max-width: 820px)" );
                 hours = hours ? hours : 12; // the hour '0' should be '12'
                 minutes = minutes < 10 ? '0'+minutes : minutes;
                 var strTime =  ampm;
-                return strTime;
-              }
+                console.log(strTime);
+
+                //gece : am
+                //gündüz : pm
               
 
-              if(  formatAMPM(new Date) == 'am'  )
+              if(
+
+
+              (ampm == 'am') && (hours == 1 ) || (ampm == 'am') && (hours == 2 ) ||
+              (ampm == 'am') && (hours == 3 ) || (ampm == 'am') && (hours == 4 ) ||
+              (ampm == 'am') && (hours == 5 ) || (ampm == 'am') && (hours == 12 ) 
+
+
+
+              )
               { 
-                  welcomeText.innerHTML = "Hey Sinan , Good Afternoon!"
+                  welcomeText.innerHTML = "Hey Sinan , Goodnight!"
                   night.style.display = "flex";
+              } else if(
+
+                (ampm == 'pm') && (hours == 8 ) ||
+                (ampm == 'pm') && (hours == 9 ) || (ampm == 'pm') && (hours == 10 ) ||
+                (ampm == 'pm') && (hours == 11 )
+
+
+              ){
+                welcomeText.innerHTML = "Hey Sinan , Good Evening!"
+                  night.style.display = "flex";
+
               }
-              else
+              else 
               {
                   
                   welcomeText.innerHTML = "Hey Sinan , Good Morning"
