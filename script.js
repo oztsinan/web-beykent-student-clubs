@@ -182,23 +182,34 @@ var mq = window.matchMedia( "(max-width: 820px)" );
             const sun = document.querySelector(".sun")
             const night = document.querySelector(".moon")
             const welcomeText = document.querySelector("#welcomeMessage")            
-            var tarih = new Date().getHours();
-
-            console.log(tarih);
-
-            if(tarih >= 20 && tarih < 6)
-            { 
-                welcomeText.innerHTML = "Hey Sinan , Good Afternoon!"
-                night.style.display = "flex";
-            }
-            else if(tarih >= 6 && tarih < 20)
-            {
-                welcomeText.innerHTML = "Hey Sinan , Good Morning"
-                sun.style.display = "flex";
-
-            }
 
 
+
+
+            function formatAMPM(date) {
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0'+minutes : minutes;
+                var strTime =  ampm;
+                return strTime;
+              }
+              
+
+              if(  formatAMPM(new Date) == 'am'  )
+              { 
+                  welcomeText.innerHTML = "Hey Sinan , Good Afternoon!"
+                  night.style.display = "flex";
+              }
+              else
+              {
+                  
+                  welcomeText.innerHTML = "Hey Sinan , Good Morning"
+                  sun.style.display = "flex";
+  
+              }
 
 
 
