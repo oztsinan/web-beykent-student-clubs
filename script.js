@@ -186,7 +186,7 @@ var mq = window.matchMedia( "(max-width: 820px)" );
 
             console.log(tarih);
 
-            if(tarih => 20 && tarih < 6)
+            if(tarih >= 20 && tarih < 6)
             { 
                 welcomeText.innerHTML = "Hey Sinan , Good Afternoon!"
                 night.style.display = "flex";
