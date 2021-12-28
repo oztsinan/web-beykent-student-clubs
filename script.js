@@ -303,11 +303,11 @@ var mq = window.matchMedia( "(max-width: 820px)" );
                 },
             })
  
-            const popUp3 = document.querySelector("#galleryPopup-2")
+            const popUp2 = document.querySelector("#galleryPopup-2")
             const content2 = document.querySelector("#galleryPopup-frame-2")
 
-            popUp3.addEventListener('click', function(){
-              popUp3.style.cssText = `
+            popUp2.addEventListener('click', function(){
+              popUp2.style.cssText = `
               display: none; 
               transition: 0.5s;
 
