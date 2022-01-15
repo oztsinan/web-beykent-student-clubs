@@ -2,7 +2,7 @@
 
 ## Üniversite Kulüp Responsive  Web Tasarım v1.0
 
-**HTML**, **CSS** ve **Javascript** kullanarak yazmış olduğum siteyi [inceleyebilirsiniz.](https://sinaanozturkk.github.io/beykentStudentClubs_v1/)  
+**HTML**, **CSS** ve **Javascript** kullanarak yazmış olduğum siteyi [inceleyebilirsiniz.](https://oztsinan.github.io/beykentStudentClubs_v1/)  
 
 ## Tam duyarlı (responsive) tasarım
 ![](https://i.ibb.co/CwMrJ7W/onpnhj.png)
